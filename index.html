@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal-01 closed" id="modal-01"></div>
+
+    <div class="modal closed" id="modal">
+      
+      <div class="modal-guts">
+        <h1>Insira seus dados a seguir: </h1>
+        <div>
+
+            <label>Nome: </label>
+            <input type="text" id="name" placeholder="Ex: Julia"  maxlength="100">
+            <BR>
+
+
+            <br>
+            <label>Email: </label>
+            <input type="text" id="email" placeholder=""  maxlength="100"> <br>
+            
+            <br>
+             <label>Telefone: </label>
+            <input type="tel" placeholder="(00)00000-0000" id="telefone" oninput=mascara_telefone() maxlength="14"><br>
+
+
+             <br>
+            <label>CPF: </label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" oninput=mascara_cpf() maxlength="14"><br>
+
+        
+            <br>
+            
+                <label>Senha:</label>
+                <input type="password" placeholder="" id="senha" maxlength="11">
+                <div>
+                    <br>
+                <button id="btnmodal" onclick="enviar()">Enviar</button>
+                <button class="close-button" id="close-button" onclick="fechar()">Fechar</button>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+   
+    <button id="button1"  type="button" onclick="abrir()">Login/Cadastro</button>
+    
+    <script src="java.js"></script>
+</body>
+</html>
