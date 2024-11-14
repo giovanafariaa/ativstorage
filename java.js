@@ -82,6 +82,7 @@ function fechar() {
 };
 
 function enviar() {
-    window.location.href = "pag2.html";
+    window.alert("Seu cadastro foi concluído!!")
+}
 
 }
